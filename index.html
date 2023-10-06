@@ -7,22 +7,43 @@
     <link rel="stylesheet" href="fonts/fonts.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
-  <body class="body">
+  <body class="content-section body">
     <header class="header">
-      <div class="header-content">
-        <img class="logo" src="images/logo.svg" alt="Логотип: вёрстка" />
-        <nav class="nav-list">
-          <div class="nav-item">Главная</div>
-          <div class="nav-item nav-item-ul">О нас</div>
-          <div class="nav-item nav-item-ul">Контакты</div>
-        </nav>
-      </div>
+      <a href="#0" class="header__logo">
+        <img
+          class="header__logo-image"
+          src="images/logo.svg"
+          alt="Логотип: вёрстка"
+        />
+      </a>
+      <nav class="header__menu">
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#0">Главная</a>
+          </li>
+          <li class="header__menu-item nav-item-ul">
+            <a class="header__menu-link" href="#0">О нас</a>
+          </li>
+          <li class="header__menu-item nav-item-ul">
+            <a class="header__menu-link" href="#0">Контакты</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-      <section></section>
+      <section class="content-section content-section_theme_dark title">
+        <p class="title-text title-text-left">С</p>
+        <p class="title-text title-text-center">чистого</p>
+        <p class="title-text title-text-right">листа</p>
+        <img class="cover" src="images/cover.svg" />
+      </section>
+      <section class="content-section content-section_theme_bright"></section>
+      <section class="content-section content-section_theme_dark"></section>
+      <section class="content-section content-section_theme_bright"></section>
+      <section class="content-section content-section_theme_dark"></section>
     </main>
 
-    <footer></footer>
+    <footer class="content-section"></footer>
   </body>
 </html>
