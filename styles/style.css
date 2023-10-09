@@ -22,7 +22,6 @@ blockquote {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -30,6 +29,18 @@ blockquote {
   box-sizing: border-box;
   width: 360px;
   margin: 0 auto;
+}
+
+.content-section_theme_dark {
+  background-color: black;
+  color: white;
+  min-height: 100px;
+}
+
+.content-section_theme_bright {
+  background-color: yellow;
+  color: black;
+  min-height: 100px;
 }
 
 .header {
@@ -69,25 +80,16 @@ blockquote {
   font-style: normal;
   line-height: 1.265em;
 }
+/* ------------------------ */
 
-.content-section_theme_dark {
-  background-color: black;
-  color: white;
-  min-height: 100px;
-}
-
-.content-section_theme_bright {
-  background-color: yellow;
-  color: black;
-  min-height: 100px;
-}
-
+/* Cover section */
 .cover {
   background-image: url("../images/cover.svg");
   background-position: 20px 30px;
   background-repeat: no-repeat;
   min-height: 198px;
   background-size: 95% auto;
+  padding-bottom: 35px;
 }
 
 .cover__title {
@@ -102,7 +104,7 @@ blockquote {
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
-  line-height: 100%; /* 72px */
+  line-height: 100%;
   box-sizing: border-box;
 }
 
@@ -119,3 +121,38 @@ blockquote {
   text-align: right;
   margin-right: 24px;
 }
+/* ------------------------- */
+
+/* --- Intro section --- */
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 0 20px 38px 20px;
+  font-family: "Inter regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.intro__heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro__title {
+  color: var(--text-gray, #ccc);
+  line-height: 120%;
+}
+
+.intro__date {
+  white-space: nowrap;
+}
+
+.intro__main-text {
+  color: #f5f5f5;
+  line-height: 135%;
+}
+/* ----------------------- */
