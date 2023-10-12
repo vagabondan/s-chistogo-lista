@@ -158,8 +158,8 @@ blockquote {
 }
 /* ----------------------- */
 
-/* reasons */
-.reasons {
+/* --- common in articles --- */
+.article__outside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,21 +167,20 @@ blockquote {
   padding: 40px 20px;
 }
 
-.reasons__text-right {
-  text-align: right;
-}
-
-.reasons__text-left {
-  text-align: left;
-}
-
-.reasons__title {
+.article__title {
   box-sizing: border-box;
   letter-spacing: 0.5px;
 }
 
-.reasons__accent-span {
-  color: var(--black-bg, #131313);
+.article__title-upper {
+  text-align: right;
+}
+
+.article__title-bottom {
+  text-align: left;
+}
+
+.article__accent-span {
   display: block;
   font-family: "EB Garamond regular", serif;
   font-size: 28px;
@@ -190,13 +189,19 @@ blockquote {
   line-height: 110%;
 }
 
-.reasons__introduction {
-  color: var(--black-bg, #131313);
+.article__introduction {
   font-family: "Inter regular", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px; /* 135% */
+  line-height: 135%;
+}
+
+/* ---------------------- */
+
+/* --- reasons --- */
+.reasons {
+  color: #131313;
 }
 
 .content-section__list {
@@ -209,7 +214,7 @@ blockquote {
 }
 
 .content-section__list-item {
-  color: var(--black-bg, #131313);
+  color: #131313;
   font-family: "Inter regular", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -218,7 +223,7 @@ blockquote {
 }
 
 .content-section__list-accent {
-  color: var(--black-bg, #131313);
+  color: #131313;
   font-family: "Inter regular", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -226,4 +231,86 @@ blockquote {
   /* line-height: 21.6px; */
   letter-spacing: 0.2px;
 }
+/* ----------------------- */
+
+/* --- how-to --- */
+.how-to {
+  color: #f5f5f5;
+}
+
+.card {
+  border-radius: 30px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* карточка без фото */
+.card_text-only {
+}
+
+/* цветовые модификаторы карточек */
+.card_theme_dark {
+  background-color: #343434;
+}
+
+.card_theme_bright {
+  background-color: #fee42a;
+}
+
+/* контейнер с информацией об авторе */
+.card__author {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* фото автора */
+.card__author-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background: url("../images/polyarinov.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+/* имя автора */
+.card__author-name {
+  font-family: "Inter regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%; /* 21.6px */
+}
+
+/* контейнер для контента карточки */
+.card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* заголовок перед текстом карточки */
+.card__title {
+  font-family: "EB Garamond regular", serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135%;
+}
+
+/* контейнер для текста карточки */
+.card__text {
+  font-family: "Inter regular", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
+}
+
 /* ----------------------- */
