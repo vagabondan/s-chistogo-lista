@@ -253,10 +253,6 @@ blockquote {
   gap: 8px;
 }
 
-/* карточка без фото */
-.card_text-only {
-}
-
 /* цветовые модификаторы карточек */
 .card_theme_dark {
   background-color: #343434;
