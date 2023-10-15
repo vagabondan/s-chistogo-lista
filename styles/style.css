@@ -19,6 +19,7 @@ h6,
 p,
 ul,
 ol,
+li,
 blockquote {
   margin: 0;
   padding: 0;
@@ -26,6 +27,7 @@ blockquote {
   vertical-align: baseline;
   font-weight: inherit;
   font-size: inherit;
+  text-align: inherit;
 }
 
 .content-section {
@@ -60,8 +62,8 @@ blockquote {
 .header {
   padding: 24px 20px;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .header__logo-image {
@@ -74,14 +76,10 @@ blockquote {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 12px;
 }
 
-.header__menu-item {
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-}
 /* ------------------------ */
 
 /* Cover section */
@@ -93,7 +91,7 @@ blockquote {
   padding: 7px 20px 35px;
 }
 
-.accent-span {
+.cover__accent-span {
   display: block;
   color: #fff;
   font-family: EBGaramond, serif;
@@ -113,6 +111,7 @@ blockquote {
 .intro {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 24px;
   padding: 0 20px 38px 20px;
@@ -139,10 +138,10 @@ blockquote {
 /* ----------------------- */
 
 /* --- common in articles --- */
-.article__outside {
+.article {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
   gap: 32px;
   padding: 40px 20px;
 }
@@ -174,7 +173,8 @@ blockquote {
 /* ---------------------- */
 
 /* --- reasons --- */
-.reasons {
+.em-dash-fix {
+  margin-left: -3px;
 }
 
 .content-section__list {
@@ -187,22 +187,12 @@ blockquote {
 }
 
 .content-section__list-item {
-  color: #131313;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21.6px;
+  line-height: 135%;
 }
 
 .content-section__list-accent {
-  color: #131313;
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-style: normal;
   font-weight: 700;
-  /* line-height: 21.6px; */
-  letter-spacing: 0.2px;
+  letter-spacing: 0.012px;
 }
 /* ----------------------- */
 
@@ -226,6 +216,8 @@ blockquote {
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
+  letter-spacing: 0.05px;
+  line-height: 135%;
 }
 
 /* цветовые модификаторы карточек */
@@ -273,8 +265,6 @@ blockquote {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 135%;
-  letter-spacing: 0.4px;
 }
 
 /* контейнер для контента карточки */
@@ -292,16 +282,6 @@ blockquote {
   font-style: normal;
   font-weight: 500;
   line-height: 135%;
-  letter-spacing: 0.4px;
-}
-
-/* контейнер для текста карточки */
-.card__text {
-  font-family: Inter, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 135%;
 }
 
 /* ----------------------- */
@@ -309,18 +289,13 @@ blockquote {
 /* --- footer --- */
 /* блок с копирайтом */
 .footer {
-  border-top: 1px solid var(--yellow-bg, #fee42a);
+  border-top: 1px solid #fee42a;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  font-family: Inter, sans-serif;
-  color: #f5f5f5;
-  font-style: normal;
-  font-weight: 400;
 }
 
 .footer__copy {
-  font-size: 16px;
   line-height: 135%;
 }
 
