@@ -4,7 +4,7 @@ body {
   padding: 0;
   border: 0;
 
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +94,7 @@ blockquote {
 .cover__accent-span {
   display: block;
   color: #fff;
-  font-family: EBGaramond, serif;
+  font-family: EBGaramond;
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +154,7 @@ blockquote {
 
 .article__accent-span {
   display: block;
-  font-family: EBGaramond, serif;
+  font-family: EBGaramond;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -163,7 +163,7 @@ blockquote {
 }
 
 .article__introduction {
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -261,7 +261,7 @@ blockquote {
 
 /* имя автора */
 .card__author-name {
-  font-family: Inter, sans-serif;
+  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -277,7 +277,7 @@ blockquote {
 
 /* заголовок перед текстом карточки */
 .card__title {
-  font-family: EBGaramond, serif;
+  font-family: EBGaramond;
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
