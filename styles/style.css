@@ -94,7 +94,7 @@ blockquote {
 .cover__accent-span {
   display: block;
   color: #fff;
-  font-family: EBGaramond;
+  font-family: "EB Garamond";
   font-size: 72px;
   font-style: normal;
   font-weight: 400;
@@ -154,7 +154,7 @@ blockquote {
 
 .article__accent-span {
   display: block;
-  font-family: EBGaramond;
+  font-family: "EB Garamond";
   font-size: 28px;
   font-style: normal;
   font-weight: 500;
@@ -277,7 +277,7 @@ blockquote {
 
 /* заголовок перед текстом карточки */
 .card__title {
-  font-family: EBGaramond;
+  font-family: "EB Garamond";
   font-size: 22px;
   font-style: normal;
   font-weight: 500;
