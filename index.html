@@ -20,7 +20,9 @@
       <nav class="header__menu">
         <ul class="header__menu-list">
           <li class="header__menu-item">
-            <a class="header__menu-link" href="#0">Главная</a>
+            <a class="header__menu-link header__menu-link-first" href="#0"
+              >Главная</a
+            >
           </li>
           <li class="header__menu-item nav-item-ul">
             <a class="header__menu-link" href="#0">О нас</a>
@@ -146,7 +148,11 @@
           <li class="cards-list__item">
             <div class="card card_theme_dark">
               <div class="card__author">
-                <div class="card__author-photo card__author-polyarinov"></div>
+                <div
+                  role="img"
+                  aria-label="Polyarinov portrait photo"
+                  class="card__author-photo card__author-polyarinov"
+                ></div>
                 <p class="card__author-name">Алексей Поляринов</p>
               </div>
               <div class="card__content">
@@ -183,8 +189,11 @@
           <li class="cards-list__item">
             <div class="card card_theme_dark">
               <div class="card__author">
-                <!-- <img class="card__author-photo" src="./images/polyarinov.png"></img> -->
-                <div class="card__author-photo card__author-bunin"></div>
+                <div
+                  class="card__author-photo card__author-bunin"
+                  role="img"
+                  aria-label="Bunin portrait photo"
+                ></div>
                 <p class="card__author-name">Иван Бунин</p>
               </div>
               <div class="card__content">
